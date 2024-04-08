@@ -1,16 +1,17 @@
 #include "mbed.h"
 #include "rtos.h"
 #include "Motor.h"
-#include "uLCD_4DGL.h"
+#include "Speaker.h"
 #include "SDFileSystem.h"
 #include "wave_player.h"
 
-RawSerial  bluemod(p28,p27);
+RawSerial  bluemod(p13, p14);
 Motor lm(p23, p6, p5); // pwm, fwd, rev
 Motor rm(p24, p8, p7); // pwm, fwd, rev
 DigitalOut led(LED1); // on = manual; off = automatic;
 DigitalIn echo(p20);
 DigitalOut trigger(p19);
+Speaker mySpeaker(p21);
 //Analog Out Jack
 //On Board Speaker
 volatile bool mode = 1; //1 = manual; 0 = automatic
@@ -32,6 +33,8 @@ void blue(void const *args) {
                             if (bhit=='1') {
                                 mode = !mode;
                                 led = !led;
+                                mySpeaker.PlayNote(969.0, 0.5, 1.0);
+                                mySpeaker.PlayNote(800.0, 0.5, 1.0);
                             } else {
                                 mode = mode;
                             }
