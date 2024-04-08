@@ -17,6 +17,8 @@ Speaker mySpeaker(p21);
 volatile bool mode = 1; //1 = manual; 0 = automatic
 volatile int distance = 0;
 volatile int correction = 0;
+volatile float speed = 0.7;
+volatile double sound = 440;
 Timer sonar;
 
 void blue(void const *args) {
@@ -33,17 +35,43 @@ void blue(void const *args) {
                             if (bhit=='1') {
                                 mode = !mode;
                                 led = !led;
-                                mySpeaker.PlayNote(969.0, 0.5, 1.0);
-                                mySpeaker.PlayNote(800.0, 0.5, 1.0);
                             } else {
                                 mode = mode;
+                            }
+                            break;
+                        case '3': //decrease speed
+                            if (bhit=='1') {
+                                if (speed < 0.3) {
+                                    speed = speed;
+                                    sound = sound;
+                                } else {
+                                    speed -= 0.1;
+                                    sound -= 30;
+                                }
+                                mySpeaker.PlayNote(sound, 0.5, 1.0);
+                            } else {
+                                speed = speed;
+                            }
+                            break;
+                        case '4': //increase speed
+                            if (bhit=='1') {
+                                if (speed > 1.0) {
+                                    speed = speed;
+                                    sound = sound;
+                                } else {
+                                    speed += 0.1;
+                                    sound += 30;
+                                }
+                                mySpeaker.PlayNote(sound, 0.5, 1.0);
+                            } else {
+                                speed = speed;
                             }
                             break;
                         case '5': //up dpad
                             if (mode) {
                                 if (bhit=='1') {
-                                    lm.speed(1.0);
-                                    rm.speed(1.0);
+                                    lm.speed(speed);
+                                    rm.speed(speed);
                                 } else {
                                     lm.speed(0.0);
                                     rm.speed(0.0);
@@ -53,8 +81,8 @@ void blue(void const *args) {
                         case '6': //down dpad
                             if (mode) {
                                 if (bhit=='1') {
-                                    lm.speed(-1.0);
-                                    rm.speed(-1.0);
+                                    lm.speed(-speed);
+                                    rm.speed(-speed);
                                 } else {
                                     lm.speed(0.0);
                                     rm.speed(0.0);
@@ -64,8 +92,8 @@ void blue(void const *args) {
                         case '7': //left dpad
                             if (mode) {
                                 if (bhit=='1') {
-                                    lm.speed(-0.5);
-                                    rm.speed(0.5);
+                                    lm.speed(-speed);
+                                    rm.speed(speed);
                                 } else {
                                     lm.speed(0.0);
                                     rm.speed(0.0);
@@ -75,8 +103,8 @@ void blue(void const *args) {
                         case '8': //right dpad
                             if (mode) {
                                 if (bhit=='1') {
-                                    lm.speed(0.5);
-                                    rm.speed(-0.5);
+                                    lm.speed(speed);
+                                    rm.speed(-speed);
                                 } else {
                                     lm.speed(0.0);
                                     rm.speed(0.0);
