@@ -18,6 +18,7 @@ Speaker mySpeaker(p21);
 DigitalOut shdn(p26);
 Serial pc(USBTX,USBRX);
 Mutex mutex;
+Mutex speaker;
 
 #define VL53L0_I2C_SDA   p28
 #define VL53L0_I2C_SCL   p27
@@ -63,7 +64,9 @@ void blue(void const *args) {
                                     speed -= 0.1;
                                     sound -= 30;
                                 }
+                                speaker.lock();
                                 mySpeaker.PlayNote(sound, 0.5, 1.0);
+                                speaker.unlock();
                             } else {
                                 speed = speed;
                             }
@@ -77,7 +80,9 @@ void blue(void const *args) {
                                     speed += 0.1;
                                     sound += 30;
                                 }
+                                speaker.lock();
                                 mySpeaker.PlayNote(sound, 0.5, 1.0);
+                                speaker.unlock();
                             } else {
                                 speed = speed;
                             }
@@ -164,13 +169,32 @@ void lidar(void const *args) {
     pc.printf("%d", mode);
     while (1) {
         if (!mode) {
-            pc.printf("%d", mode);
-            pc.printf("hello\n");
+            pc.printf("D=%ld mm\r\n", distance);
             mutex.lock();
             lm.speed(0.5);
             rm.speed(0.5);
             mutex.unlock();
             status = board->sensor_centre->get_distance(&distance);
+            if ((distance > 500)) {
+                speaker.lock();
+                mySpeaker.PlayNote(sound, 0.5, 0.1);
+                speaker.unlock();
+            }
+            if ((distance < 500) && (distance >= 400)) {
+                speaker.lock();
+                mySpeaker.PlayNote(sound, 0.5, 0.3);
+                speaker.unlock();
+            }
+            if ((distance < 400) && (distance >= 300)) {
+                speaker.lock();
+                mySpeaker.PlayNote(sound, 0.5, 0.5);
+                speaker.unlock();
+            }
+            if ((distance < 300) && (distance >= 200)) {
+                speaker.lock();
+                mySpeaker.PlayNote(sound, 0.5, 1.0);
+                speaker.unlock();
+            }
             while (distance <= 150) {
                 pc.printf("D=%ld mm\r\n", distance);
                 //speaker make noise !!!!
