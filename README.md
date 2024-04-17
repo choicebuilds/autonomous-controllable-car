@@ -1,8 +1,14 @@
 # Autonomous Controllable Car
+Jaeyoung Choi, Shayahn Mirfendereski, Jubral Holloway, Seth Wobig
+Georgia Tech ECE4180 Final Project
 
-## Overview
+## Project Idea
 
-The goal of this project is to create a fully autonomous car that can also be controlled manually if desired. REMEMBER TO INCLUDE VIDEO.
+The goal of this project is to create a self-driving car that has the ability to be driven independently when desired. The car will be operated using an mbed LPC1768 microcontroller and come with various features including:
+1. Bluetooth Connection - allows user to switch between automatic/manual modes; on manual mode, the car can move in any direction with the ability to adjust speed.
+2. Obstacle Detection - detects if an object is nearby via a lidar sensor and utilizes the speakers to beep louder as the car gets closer to an obstacle.
+3. LCD Screen - displays the mode and creates a visual representation of how close the car is to an obstacle.
+5. Speedometer - allows users to visually see the speed the car is going at.
 
 ## Parts List
 * [mbed LPC1768][mbed]
