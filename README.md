@@ -104,9 +104,14 @@ Here is where all the magic happens. This section explains how all the different
 1. The servo motor mimics the functionality of a speedomoter. When the speed variable is 0 (lowest speed) it points to the left and at 1.0 (highest speed) it points right.
 <img src="https://github.com/choicebuilds/ece4180/blob/main/images/servoCode.png" alt="SpeakerDist" width="400"/>
 
-## Running the Robot
+## Running the Car
+1. Connect your car to the power sources
+2. Download the BluefruitConnect App (iOS/Android)
+3. Select your car (Adafruit Bluefruit LE)
+4. Go to "Controller"
+5. Go to "Control Pad"
 
-Download bluetooth app + how to navigate to controls & what the buttons do.
+## Conclusion/Future Improvements?
 
 [mbed]: https://www.digikey.com/en/products/detail/nxp-usa-inc/OM11043-598/2138502
 [LBB]: https://www.sparkfun.com/products/12615
@@ -122,18 +127,7 @@ Download bluetooth app + how to navigate to controls & what the buttons do.
 [ULCD]: https://www.sparkfun.com/products/11377
 [LS]: https://www.adafruit.com/product/3317
 [SE]: https://www.sparkfun.com/products/11884
-
 [car-assembly]: https://www.youtube.com/watch?v=aJRYTqZu5OE
-
-[Shadow Chassis]: https://github.com/choicebuilds/ece4180/blob/main/images/shadow-chassis.jpg "Shadow Chassis"
-[Motor]: https://github.com/choicebuilds/ece4180/blob/main/images/motor.jpg "Motor"
-[Bluetooth Sensor]: https://github.com/choicebuilds/ece4180/blob/main/images/bluetooth-sensor.jpg "Bluetooth Sensor"
-[Speaker]: https://github.com/choicebuilds/ece4180/blob/main/images/speaker.jpg "Speaker"
-[Audio Amp]: https://github.com/choicebuilds/ece4180/blob/main/images/audio-amp.jpg "Audio Amp"
-[Lidar]: https://github.com/choicebuilds/ece4180/blob/main/images/lidar-sensor.jpg "Lidar Sensor"
-[LCD]: https://github.com/choicebuilds/ece4180/blob/main/images/uLCD.jpg "uLCD"
-[Servo]: https://github.com/choicebuilds/ece4180/blob/main/images/servo.jpg "Servo"
-
 [bt1]: https://github.com/choicebuilds/ece4180/blob/main/images/bluetooth-1.png "Bluetooth Setup"
 [bt2]: https://github.com/choicebuilds/ece4180/blob/main/images/bluetooth-2.png "Mode Control"
 [bt3]: https://github.com/choicebuilds/ece4180/blob/main/images/bluetooth-3.png "Speed Control"
