@@ -61,7 +61,7 @@ Very straight forward build process; the instructions on how to assemble the car
 
 
 
-##### Step 6: Connect the servo
+#### Step 6: Connect the servo
 ![alt text][Servo]
 
 
@@ -72,15 +72,33 @@ Very straight forward build process; the instructions on how to assemble the car
 
 Here is where all the magic happens. This section explains how all the different hardware parts are implemented and work together to create a complete robot:
 
-##### Bluetooth Manual vs. Automatic
+#### Bluetooth Manual vs. Automatic
+1. We use this code to set up the bluetooth. We can then use the switch statements to control the various functionalities and direction of the car.  
+![alt text][bt1]
 
-##### Speaker Functionality
+2. To enable/disable the automatic/manual modes, we will use button 1.  
+![alt text][bt2]
 
-##### LiDaR Functionality
+3. To control the speed of the robot, we will use button 3 to increase and button 4 to decrease.  
+![alt text][bt3]
 
-##### uLCD Functionality
+4. To control the direction of the robot, we will configure it with cases 5, 6, 7, and 8.  
+![alt text][bt4]
 
-##### Cardinal Direction Functionality
+#### Speaker Functionality
+1. The speaker plays a note everytime the speed of the robot is increased or decreased in the following case statements.
+<img source="https://github.com/choicebuilds/ece4180/blob/main/images/speakerBTcode.png" alt="Speaker" width="200"/>
+
+2. The speaker will also play notes of varying tones depending on the robots proximity to an object detected by the lidar sensor.
+<img source="https://github.com/choicebuilds/ece4180/blob/main/images/SpeakerDistance.png" alt="SpeakerDist" width="200"/>
+
+#### LiDaR Functionality
+
+#### uLCD Functionality
+
+#### Speedometer Functionality
+1. The servo motor mimics the functionality of a speedomoter. When the speed variable is 0 (lowest speed) it points to the left and at 1.0 (highest speed) it points right.
+<img source="https://github.com/choicebuilds/ece4180/blob/main/images/servoCode.png" alt="SpeakerDist" width="200"/>
 
 ## Running the Robot
 
@@ -111,3 +129,8 @@ Download bluetooth app + how to navigate to controls & what the buttons do.
 [Lidar]: https://github.com/choicebuilds/ece4180/blob/main/images/lidar-sensor.jpg "Lidar Sensor"
 [LCD]: https://github.com/choicebuilds/ece4180/blob/main/images/uLCD.jpg "uLCD"
 [Servo]: https://github.com/choicebuilds/ece4180/blob/main/images/servo.jpg "Servo"
+
+[bt1]: https://github.com/choicebuilds/ece4180/blob/main/images/bluetooth-1.png "Bluetooth Setup"
+[bt2]: https://github.com/choicebuilds/ece4180/blob/main/images/bluetooth-2.png "Mode Control"
+[bt3]: https://github.com/choicebuilds/ece4180/blob/main/images/bluetooth-3.png "Speed Control"
+[bt4]: https://github.com/choicebuilds/ece4180/blob/main/images/bluetooth-4.png "Direction Control"
