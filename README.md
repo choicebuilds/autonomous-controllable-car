@@ -123,7 +123,7 @@ Download bluetooth app + how to navigate to controls & what the buttons do.
 [LCD]: https://github.com/choicebuilds/ece4180/blob/main/images/uLCD.jpg "uLCD"
 [Servo]: https://github.com/choicebuilds/ece4180/blob/main/images/servo.jpg "Servo"
 
-[bt1]: https://github.com/choicebuilds/ece4180/blob/main/images/bluetooth-1.jpg "Bluetooth Setup"
-[bt2]: https://github.com/choicebuilds/ece4180/blob/main/images/bluetooth-2.jpg "Mode Control"
-[bt3]: https://github.com/choicebuilds/ece4180/blob/main/images/bluetooth-3.jpg "Speed Control"
-[bt4]: https://github.com/choicebuilds/ece4180/blob/main/images/bluetooth-4.jpg "Direction Control"
+[bt1]: https://github.com/choicebuilds/ece4180/blob/main/images/bluetooth-1.png "Bluetooth Setup"
+[bt2]: https://github.com/choicebuilds/ece4180/blob/main/images/bluetooth-2.png "Mode Control"
+[bt3]: https://github.com/choicebuilds/ece4180/blob/main/images/bluetooth-3.png "Speed Control"
+[bt4]: https://github.com/choicebuilds/ece4180/blob/main/images/bluetooth-4.png "Direction Control"
