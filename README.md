@@ -100,6 +100,11 @@ Here is where all the magic happens. This section explains how all the different
 <img src="https://github.com/choicebuilds/ece4180/blob/main/images/moveFunct.png" alt="Move" width="400"/>
 
 #### uLCD Functionality
+1. The LCD is used within the main function to display a green progross bar depending on the distance the robot is to an object, the closer the taller the bar.
+<img src="https://github.com/choicebuilds/ece4180/blob/main/images/LCDbar.png" alt="bar" width="400"/>
+
+2. The LCD also displays which mode the robot is in, either "Manual" or "Automatic".
+<img src="https://github.com/choicebuilds/ece4180/blob/main/images/LCDmode.png" alt="mode" width="400"/>
 
 #### Speedometer Functionality
 1. The servo motor mimics the functionality of a speedomoter. When the speed variable is 0 (lowest speed) it points to the left and at 1.0 (highest speed) it points right.
