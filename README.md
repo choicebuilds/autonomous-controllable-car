@@ -87,23 +87,23 @@ Here is where all the magic happens. This section explains how all the different
 
 #### Speaker Functionality
 1. The speaker plays a note everytime the speed of the robot is increased or decreased in the following case statements.
-<img src="https://github.com/choicebuilds/ece4180/blob/main/images/speakerBTcode.png" alt="Speaker" width="200"/>
+<img src="https://github.com/choicebuilds/ece4180/blob/main/images/speakerBTcode.png" alt="Speaker" width="400"/>
 
 2. The speaker will also play notes of varying tones depending on the robots proximity to an object detected by the lidar sensor.
-<img src="https://github.com/choicebuilds/ece4180/blob/main/images/SpeakerDistance.png" alt="SpeakerDist" width="200"/>
+<img src="https://github.com/choicebuilds/ece4180/blob/main/images/SpeakerDistance.png" alt="SpeakerDist" width="400"/>
 
 #### LiDaR Functionality
 1. The lidar thread gathers the distance data for the distance variable
-<img src="https://github.com/choicebuilds/ece4180/blob/main/images/lidarFunct.png" alt="LiDaR" width="200"/>
+<img src="https://github.com/choicebuilds/ece4180/blob/main/images/lidarFunct.png" alt="LiDaR" width="400"/>
 
 2. The move thread uses the distance data from the lidar to determine when the robot is close enough to an object to turn as well as play varying notes from the speaker.
-<img src="https://github.com/choicebuilds/ece4180/blob/main/images/moveFunct.png" alt="Move" width="200"/>
+<img src="https://github.com/choicebuilds/ece4180/blob/main/images/moveFunct.png" alt="Move" width="400"/>
 
 #### uLCD Functionality
 
 #### Speedometer Functionality
 1. The servo motor mimics the functionality of a speedomoter. When the speed variable is 0 (lowest speed) it points to the left and at 1.0 (highest speed) it points right.
-<img src="https://github.com/choicebuilds/ece4180/blob/main/images/servoCode.png" alt="SpeakerDist" width="500"/>
+<img src="https://github.com/choicebuilds/ece4180/blob/main/images/servoCode.png" alt="SpeakerDist" width="400"/>
 
 ## Running the Robot
 
