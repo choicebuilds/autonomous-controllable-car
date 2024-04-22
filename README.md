@@ -87,7 +87,8 @@ Here is where all the magic happens. This section explains how all the different
 
 #### Speaker Functionality
 1. The speaker plays a note everytime the speed of the robot is increased or decreased in the following case statements.
-2. The speaker will also play notes of varying tones depending on the robots proximity to an object detected by the lidar sensor.
+<img source="images/speakerBTcode.png
+3. The speaker will also play notes of varying tones depending on the robots proximity to an object detected by the lidar sensor.
 
 #### LiDaR Functionality
 
