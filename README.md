@@ -87,10 +87,9 @@ Here is where all the magic happens. This section explains how all the different
 
 #### Speaker Functionality
 1. The speaker plays a note everytime the speed of the robot is increased or decreased in the following case statements.
-![alt text][https://github.com/choicebuilds/ece4180/blob/main/images/speakerBTcode.png]
 <img source="https://github.com/choicebuilds/ece4180/blob/main/images/speakerBTcode.png" alt="Speaker" width="200"/>
 
-3. The speaker will also play notes of varying tones depending on the robots proximity to an object detected by the lidar sensor.
+2. The speaker will also play notes of varying tones depending on the robots proximity to an object detected by the lidar sensor.
 <img source="https://github.com/choicebuilds/ece4180/blob/main/images/SpeakerDistance.png" alt="SpeakerDist" width="200"/>
 
 #### LiDaR Functionality
@@ -98,6 +97,7 @@ Here is where all the magic happens. This section explains how all the different
 #### uLCD Functionality
 
 #### Speedometer Functionality
+1. The servo motor mimics the functionality of a speedomoter. When the speed variable is 0 (lowest speed) it points to the left and at 1.0 (highest speed) it points right.
 
 ## Running the Robot
 
