@@ -90,6 +90,7 @@ Here is where all the magic happens. This section explains how all the different
 <img source="https://github.com/choicebuilds/ece4180/blob/main/images/speakerBTcode.png" alt="Speaker" width="200"/>
 
 2. The speaker will also play notes of varying tones depending on the robots proximity to an object detected by the lidar sensor.
+<img source="https://github.com/choicebuilds/ece4180/blob/main/images/SpeakerDistance.png" alt="SpeakerDist" width="200"/>
 
 #### LiDaR Functionality
 
