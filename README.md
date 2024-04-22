@@ -34,37 +34,31 @@ The goal of this project is to create a self-driving car that has the ability to
 
 Here is an overview of the parts we used along with the pin diagram of how they were plugged in into the mbed:
 
-#### Step 1: Create the car using the Shadow chassis, wheels, motor, motor driver, and battery holder.
-![alt text][Shadow Chassis]
-![alt text][Motor]
+#### Step 1: Create the car using the Shadow chassis, wheels, motor, motor driver, and battery holder.*
+<img src="https://github.com/choicebuilds/ece4180/blob/main/images/shadow-chassis.jpg" alt="Shadow Chassis" width="200"/>
 
-Very straight forward build process; the instructions on how to assemble the car can be found [here][car-assembly].
-
-#### Step 2: Connect the Bluetooth Sensor
-![alt text][Bluetooth Sensor]
+*The instructions on how to assemble the car can be found [here][car-assembly].
 
 
+#### Step 2: Connect the Motor and Motor Driver
+<img src="https://github.com/choicebuilds/ece4180/blob/main/images/motor.jpg" alt="Motor" width="200"/>  <img src="https://github.com/choicebuilds/ece4180/blob/main/images/motor-wiring.png" alt="Motor Wiring" width="400"/>
 
-#### Step 3: Connect the Speaker along with the Audio Amp
-![alt text][Speaker]
-![alt text][Audio Amp]
+#### Step 3: Connect the Bluetooth Sensor
+<img src="https://github.com/choicebuilds/ece4180/blob/main/images/bluetooth-sensor.jpg" alt="Bluetooth Sensor" width="200"/>  <img src="https://github.com/choicebuilds/ece4180/blob/main/images/bluetooth-wiring.png" alt="Bluetooth Wiring" width="200"/>  
 
-
-
-#### Step 4: Connect the lidar sensor
-![alt text][Lidar]
-
+#### Step 4: Connect the Speaker along with the Audio Amp
+<img src="https://github.com/choicebuilds/ece4180/blob/main/images/audio-amp.jpg" alt="Audio Amp" width="200"/>  <img src="https://github.com/choicebuilds/ece4180/blob/main/images/speaker-wiring.png" alt="Speaker Wiring" width="200"/>  
 
 
-#### Step 5: Connect the uLCD screen
-![alt text][LCD]
+#### Step 5: Connect the lidar sensor
+<img src="https://github.com/choicebuilds/ece4180/blob/main/images/lidar-sensor.jpg" alt="Lidar Sensor" width="200"/>  <img src="https://github.com/choicebuilds/ece4180/blob/main/images/lidar-wiring.png" alt="Lidar Wiring" width="200"/>  
+
+#### Step 6: Connect the uLCD screen
+<img src="https://github.com/choicebuilds/ece4180/blob/main/images/uLCD.jpg" alt="uLCD" width="200"/>  <img src="https://github.com/choicebuilds/ece4180/blob/main/images/uLCD-wiring.png" alt="uLCD Wiring" width="200"/>  
 
 
-
-#### Step 6: Connect the servo
-![alt text][Servo]
-
-
+#### Step 7: Connect the servo
+<img src="https://github.com/choicebuilds/ece4180/blob/main/images/servo.jpg" alt="Servo" width="200"/>  <img src="https://github.com/choicebuilds/ece4180/blob/main/images/servo-wiring.png" alt="Servo Wiring" width="200"/> 
 
 ##### Add overall picture along with wiring of entire thing
 
