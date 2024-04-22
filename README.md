@@ -98,6 +98,7 @@ Here is where all the magic happens. This section explains how all the different
 
 #### Speedometer Functionality
 1. The servo motor mimics the functionality of a speedomoter. When the speed variable is 0 (lowest speed) it points to the left and at 1.0 (highest speed) it points right.
+<img source="https://github.com/choicebuilds/ece4180/blob/main/images/servoCode.png" alt="SpeakerDist" width="200"/>
 
 ## Running the Robot
 
