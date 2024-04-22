@@ -86,6 +86,37 @@ Here is where all the magic happens. This section explains how all the different
 ![alt text][bt4]
 
 #### Speaker Functionality
+void move(void const *args) {
+    while(1) {
+        if (!mode) {
+            mutex.lock();
+            lm.speed(0.5);
+            rm.speed(0.5);
+            mutex.unlock();
+            //speaker.lock();
+            if (((distances[0]) > 500)) {
+                mySpeaker.PlayNote(sound, 0.5, 0.1);
+            }
+            else if (((distances[0]) < 500) && ((distances[0]) >= 400)) {
+                mySpeaker.PlayNote(sound, 0.5, 0.3);
+            }
+            else if (((distances[0]) < 400) && ((distances[0]) >= 300)) {
+                mySpeaker.PlayNote(sound, 0.5, 0.5);
+            }
+            else if (((distances[0]) < 300) && ((distances[0]) >= 200)) {
+                mySpeaker.PlayNote(sound, 0.5, 1.0);
+            }
+            //speaker.unlock();
+            while ((distances[0]) <= 150) {
+                mutex.lock();
+                lm.speed(-0.5);
+                rm.speed(0.5);
+                mutex.unlock();
+                wait(0.5);
+                // l_left.get_distance(&distances[0]);
+            }
+        }
+        Thread::wait(500);
 
 #### LiDaR Functionality
 
