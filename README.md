@@ -73,16 +73,16 @@ Very straight forward build process; the instructions on how to assemble the car
 Here is where all the magic happens. This section explains how all the different hardware parts are implemented and work together to create a complete robot:
 
 #### Bluetooth Manual vs. Automatic
-1. We use this code to set up the bluetooth. We can then use the switch statements to control the various functionalities and direction of the car.
+1. We use this code to set up the bluetooth. We can then use the switch statements to control the various functionalities and direction of the car.  
 ![alt text][bt1]
 
-2. To enable/disable the automatic/manual modes, we will use button 1.
+2. To enable/disable the automatic/manual modes, we will use button 1.  
 ![alt text][bt2]
 
-3. To control the speed of the robot, we will use button 3 to increase and button 4 to decrease.
+3. To control the speed of the robot, we will use button 3 to increase and button 4 to decrease.  
 ![alt text][bt3]
 
-4. To control the direction of the robot, we will configure it with cases 5, 6, 7, and 8.
+4. To control the direction of the robot, we will configure it with cases 5, 6, 7, and 8.  
 ![alt text][bt4]
 
 #### Speaker Functionality
