@@ -93,7 +93,11 @@ Here is where all the magic happens. This section explains how all the different
 <img src="https://github.com/choicebuilds/ece4180/blob/main/images/SpeakerDistance.png" alt="SpeakerDist" width="200"/>
 
 #### LiDaR Functionality
-1. The lidar thread function gathers the distance data for the distance variable
+1. The lidar thread gathers the distance data for the distance variable
+<img src="https://github.com/choicebuilds/ece4180/blob/main/images/lidarFunct.png" alt="LiDaR" width="200"/>
+
+2. The move thread uses the distance data from the lidar to determine when the robot is close enough to an object to turn as well as play varying notes from the speaker.
+<img src="https://github.com/choicebuilds/ece4180/blob/main/images/moveFunct.png" alt="Move" width="200"/>
 
 #### uLCD Functionality
 
