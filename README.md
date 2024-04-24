@@ -113,6 +113,7 @@ Here is where all the magic happens. This section explains how all the different
 5. Go to "Control Pad"
 
 ## Demo Video
+[<img src="https://img.youtube.com/vi/yvFa_N8gIuE/hqdefault.jpg" width="600" height="300"/>](https://www.youtube.com/embed/yvFa_N8gIuE)
 
 ## Conclusion
 In an age where interplanetary travel is possible and improving, this project can serve as a blueprint for designing a more sophisticated robot with additional sensors and functionalities. There were various limitations to this project, including the fact the mbed only supports three serial ports and the cost, space, and time constraints when it comes to creating a car. For these reasons, any further improvements would require a more powerful embedded device.
