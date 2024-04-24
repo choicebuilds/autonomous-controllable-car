@@ -1,5 +1,5 @@
 # Autonomous Controllable Car
-Jaeyoung Choi, Shayahn Mirfendereski, Jubral Holloway, Seth Wobig
+Jaeyoung Choi, Shayahn Mirfendereski, Jubral Holloway, Seth Wobig  
 Georgia Tech ECE4180 Final Project
 
 ## Project Idea
@@ -111,7 +111,10 @@ Here is where all the magic happens. This section explains how all the different
 4. Go to "Controller"
 5. Go to "Control Pad"
 
-## Conclusion/Future Improvements?
+## Conclusion
+In an age where interplanetary travel is possible and improving, this project can serve as a blueprint for designing a more sophisticated robot with additional sensors and functionalities. There were various limitations to this project, including the fact the mbed only supports three serial ports and the cost, space, and time constraints when it comes to creating a car. With additional funding and a more complex embedded device to drive the car, we could *add future improvements*.
+
+##### ADD FUTURE IMPROVEMENTS
 
 [mbed]: https://www.digikey.com/en/products/detail/nxp-usa-inc/OM11043-598/2138502
 [LBB]: https://www.sparkfun.com/products/12615
