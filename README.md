@@ -60,7 +60,8 @@ Here is an overview of the parts we used along with the pin diagram of how they 
 #### Step 7: Connect the servo
 <img src="https://github.com/choicebuilds/ece4180/blob/main/images/servo.jpg" alt="Servo" width="200"/>  <img src="https://github.com/choicebuilds/ece4180/blob/main/images/servo-wiring.png" alt="Servo Wiring" width="200"/> 
 
-##### Add overall picture along with wiring of entire thing
+#### Here is the overall wiring diagram for your convenience:
+<img src="https://github.com/choicebuilds/ece4180/blob/main/images/IMG_3023.png" alt="Overall Wiring Diagram" width="600"/>
 
 ## Software Overview
 
@@ -111,10 +112,10 @@ Here is where all the magic happens. This section explains how all the different
 4. Go to "Controller"
 5. Go to "Control Pad"
 
-## Conclusion
-In an age where interplanetary travel is possible and improving, this project can serve as a blueprint for designing a more sophisticated robot with additional sensors and functionalities. There were various limitations to this project, including the fact the mbed only supports three serial ports and the cost, space, and time constraints when it comes to creating a car. With additional funding and a more complex embedded device to drive the car, we could *add future improvements*.
+## Demo Video
 
-##### ADD FUTURE IMPROVEMENTS
+## Conclusion
+In an age where interplanetary travel is possible and improving, this project can serve as a blueprint for designing a more sophisticated robot with additional sensors and functionalities. There were various limitations to this project, including the fact the mbed only supports three serial ports and the cost, space, and time constraints when it comes to creating a car. For these reasons, any further improvements would require a more powerful embedded device.
 
 [mbed]: https://www.digikey.com/en/products/detail/nxp-usa-inc/OM11043-598/2138502
 [LBB]: https://www.sparkfun.com/products/12615
