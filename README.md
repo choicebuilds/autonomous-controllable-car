@@ -26,6 +26,7 @@ The goal of this project is to create a self-driving car that has the ability to
 * [Lidar Sensor][LS]
 * [Servo][SE]
 * 8x AA Batteries
+* Portable charger
 * Wires
 
 *Different breadboard sizes can be used, these two provided our team adequate space.
