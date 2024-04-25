@@ -2,6 +2,10 @@
 Jaeyoung Choi, Shayahn Mirfendereski, Jubral Holloway, Seth Wobig  
 Georgia Tech ECE4180 Final Project
 
+![F4F9C374-A807-4CF1-9F10-F6515DA787D4_1_105_c](https://github.com/choicebuilds/autonomous-controllable-car/assets/124638796/ef822370-c3fe-4967-b13e-450e7686fb2a)
+![E07E3C89-34E0-46DA-833B-AC1AE5AEFC19_1_105_c](https://github.com/choicebuilds/autonomous-controllable-car/assets/124638796/d6723ef4-562a-4bd0-baf0-96bf2a974712)
+
+
 ## Project Idea
 
 The goal of this project is to create a self-driving car that has the ability to be driven independently when desired. The car will be operated using an mbed LPC1768 microcontroller and come with various features including:
